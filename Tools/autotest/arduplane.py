@@ -3908,6 +3908,10 @@ return update()
         '''Test InertialLabs EAHRS support'''
         self.fly_external_AHRS("ILabs", 5)
 
+    def XsensEAHRS(self):
+        '''Test Xsens EAHRS support'''
+        self.fly_external_AHRS("Xsens", 12)
+
     def KebniSensAItionExternalINS(self):
         '''Test Kebni SensAItion External INS mode. Or in Ardupilot terminology, ExternalAHRS mode.'''
         self.set_parameters({
@@ -10753,6 +10757,7 @@ return update()
             self.TerrainMission,
             self.TerrainMissionInterrupt,
             self.InertialLabsEAHRS,
+            self.XsensEAHRS,
             self.KebniSensAItionExternalIMU,
             self.GpsSensorPreArmEAHRS,
             self.Deadreckoning,
